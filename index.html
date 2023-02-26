@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>IEEE SIT SB</title>
     <link href="./style.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/bsmq8rbdsnijtp9hbtg5" type="image/x-icon">
 
   </head>
   <body>
+    <div class="overlay">
+      <img src="./images/2L1.png" alt="">
+    </div>
     <nav class="nav">
         <div class="logo">
             <li><a href="">
@@ -22,8 +26,8 @@
             <li class="n-btn"><a href="#soc">SOCIETY</a></li>
             <li class="n-btn"><a href="#mem">MEMBERS</a></li>
             <li class="n-btn"><a href="#event">EVENTS</a></li>
-            <li class="n-btn"><a href="#">GALLERY</a></li>
-            <li class="n-btn"><a href="#">CONTACT US</a></li>
+            <li class="n-btn"><a href="#gallery">GALLERY</a></li>
+            <li class="n-btn"><a href="#contact">CONTACT US</a></li>
         </div>
     </nav>
     <div class="navRight-mobile hidden-nav">
@@ -32,13 +36,24 @@
       <li><a href="#soc">SOCIETY</a></li>
       <li><a href="#mems">MEMBERS</a></li>
       <li><a href="#event">EVENTS</a></li>
-      <li><a href="#">GALLERY</a></li>
-      <li><a href="#">CONTACT US</a></li>
+      <li><a href="#gallery">GALLERY</a></li>
+      <li><a href="#contact">CONTACT US</a></li>
     </div>
     <div class="hamburger">
       <span class="line"></span>
       <span class="line"></span>
       <span class="line"></span>
+    </div>
+    <h2>Modal Example</h2>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-box">
+          <img class="event-img" src="./images/event.jfif"/>
+          <img class="event-img" src="./images/event1.jfif"/>
+        </div>
+      </div>
     </div>
     <hero>
       <div class="bg-img"></div>
@@ -91,7 +106,7 @@
       <div data-aos="fade-down-right" data-aos-delay="300" data-aos-duration="600" class="society-card-box">
         <div class="society-card">
           <a href="#" target="blank">
-            <img class="s-logo" src="./images/aps.png" />
+            <img style="width:50%" class="s-logo" src="./images/aps.png" />
           </a>
         </div>
         <a href="#" target="blank">APS - Antennas & Propogation Society</a>
@@ -205,6 +220,24 @@
             <p>IEEE SB Branch Counsellor</p>
           </div>
         </div>
+        <div class="member-card">
+          <div class="member-img">
+            <img src="./images/sb_branch_chapter_members/ieee_cs.jpg"/>
+          </div>
+          <div class="member-info">
+            <p class="member-name">Dr.M.Parthiban Mani</p>
+            <p>IEEE SB Scope Member</p>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="member-img">
+            <img src="./images/sb_executive_members/scope1.jpeg"/>
+          </div>
+          <div class="member-info">
+            <p class="member-name">Mrs.R.Prabavathi</p>
+            <p>IEEE SB Scope Member</p>
+          </div>
+        </div>
       </div>
       <h2>SB Chapter Advisors</h2>
       <div class="member-card-box pc">
@@ -316,7 +349,7 @@
         <div class="member-card-box pc">
           <div class="member-card">
             <div class="member-img">
-              <img src="./images/sb_student_member/Chair.jpeg"/>
+              <img src="./images/sb_student_member/chair.jpg"/>
             </div>
             <div class="member-info">
               <p class="member-name">K Monish</p>
@@ -328,7 +361,7 @@
               <img src="./images/sb_student_member/vice_chair.jpeg"/>
             </div>
             <div class="member-info">
-              <p class="member-name">Name</p>
+              <p class="member-name">Soundarya K</p>
               <p>Vice Chair</p>
             </div>
           </div>
@@ -337,7 +370,7 @@
               <img height="120px" src="./images/sb_student_member/secretary.jpeg"/>
             </div>
             <div class="member-info">
-              <p class="member-name">Name</p>
+              <p class="member-name">Aravindan S</p>
               <p>Secretary</p>
             </div>
           </div>
@@ -346,7 +379,7 @@
               <img src="./images/sb_student_member/Treasurer.jpeg"/>
             </div>
             <div class="member-info">
-              <p class="member-name">Name</p>
+              <p class="member-name">Harini R</p>
               <p>Treasurer</p>
             </div>
           </div>
@@ -355,7 +388,7 @@
               <img src="./images/sb_student_member/web_master.jpeg"/>
             </div>
             <div class="member-info">
-              <p class="member-name">Name</p>
+              <p class="member-name">Laxminarayanan V</p>
               <p>Web Master</p>
             </div>
           </div>
@@ -403,6 +436,24 @@
           <div class="member-info">
             <p class="member-name">Dr.G.Saritha</p>
             <p>IEEE SB Branch Counsellor</p>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="member-img">
+            <img src="./images/sb_branch_chapter_members/ieee_cs.jpg"/>
+          </div>
+          <div class="member-info">
+            <p class="member-name">Dr.M.Parthiban Mani</p>
+            <p>IEEE SB Scope Member</p>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="member-img">
+            <img src="./images/sb_executive_members/scope1.jpeg"/>
+          </div>
+          <div class="member-info">
+            <p class="member-name">Mrs.R.Prabavathi</p>
+            <p>IEEE SB Scope Member</p>
           </div>
         </div>
       </div>
@@ -515,7 +566,7 @@
           </div>
         </div>
       </div>
-      <button style="margin-left:12%;margin-top:5%" type="button" class="collapsible"><p>SB Members 2021-22</p><span>▾</span></button>
+      <button style="margin-left:12%;" type="button" class="collapsible"><p>SB Members 2021-22</p><span>▾</span></button>
       <div style="margin-left:12%" class="content">
         <div class="member-card-box ">
           <div class="member-card">
@@ -532,7 +583,7 @@
               <img src="./images/sb_student_member/vice_chair.jpeg"/>
             </div>
             <div class="member-info">
-              <p class="member-name">Name</p>
+              <p class="member-name">Soundarya K</p>
               <p>Vice Chair</p>
             </div>
           </div>
@@ -541,7 +592,7 @@
               <img height="120px" src="./images/sb_student_member/secretary.jpeg"/>
             </div>
             <div class="member-info">
-              <p class="member-name">Name</p>
+              <p class="member-name">Aravindan S</p>
               <p>Secretary</p>
             </div>
           </div>
@@ -550,7 +601,7 @@
               <img src="./images/sb_student_member/Treasurer.jpeg"/>
             </div>
             <div class="member-info">
-              <p class="member-name">Name</p>
+              <p class="member-name">Harini R</p>
               <p>Treasurer</p>
             </div>
           </div>
@@ -559,7 +610,7 @@
               <img src="./images/sb_student_member/web_master.jpeg"/>
             </div>
             <div class="member-info">
-              <p class="member-name">Name</p>
+              <p class="member-name">Laxminarayanan V</p>
               <p>Web Master</p>
             </div>
           </div>
@@ -569,7 +620,7 @@
   </div>
   <br/>
   <br/>
-  <section id="event" class="events">
+  <div id="event" class="events">
     <h1>EVENTS</h1>
     <div class="eventContainer">
       <div class="eventLists">
@@ -617,13 +668,158 @@
 
       </div>  
     </div>
-  </section>
+  </div>
+  <div id="gallery" class="gallery">
+    <h1>GALLERY</h1>
+    <div class="csslider1 autoplay cs_handle" style="width:100vw;">
+      <input name="cs_anchor1" id="cs_slide1_0" type="radio" class="cs_anchor slide">
+      <input name="cs_anchor1" id="cs_slide1_1" type="radio" class="cs_anchor slide">
+      <input name="cs_anchor1" id="cs_slide1_2" type="radio" class="cs_anchor slide">
+      <input name="cs_anchor1" id="cs_play1" type="radio" class="cs_anchor" checked="">
+      <input name="cs_anchor1" id="cs_pause1_0" type="radio" class="cs_anchor pause">
+      <input name="cs_anchor1" id="cs_pause1_1" type="radio" class="cs_anchor pause">
+      <input name="cs_anchor1" id="cs_pause1_2" type="radio" class="cs_anchor pause">
+      <ul>
+        <div>
+          <img src="./images/slideshow/WhatsApp Image 2022-10-09 at 18.43.33.jpeg" style="width: 100%;">
+        </div>
+        <li class="num0 img">
+            <img src="./images/slideshow/WhatsApp Image 2022-10-09 at 18.43.33.jpeg" alt="" title="">
+        </li>
+        <li class="num1 img">
+            <img src="./images/slideshow/WhatsApp Image 2022-10-09 at 20.32.54.jpeg" alt="" title="">
+        </li>
+        <li class="num2 img">
+            <img src="./images/slideshow/WhatsApp Image 2022-10-09 at 20.45.14.jpeg" alt="" title="">
+        </li>
+      </ul>
+      <div class="cs_play_pause">
+        <label class="cs_play" for="cs_play1">Play</label>
+      </div>
+      <div class="cs_arrowprev">
+          <label class="num0" for="cs_slide1_0"><span><i></i></span></label>
+          <label class="num1" for="cs_slide1_1"><span><i></i></span></label>
+          <label class="num2" for="cs_slide1_2"><span><i></i></span></label>
+      </div>
+      <div class="cs_arrownext">
+          <label class="num0" for="cs_slide1_0"><span><i></i></span></label>
+          <label class="num1" for="cs_slide1_1"><span><i></i></span></label>
+          <label class="num2" for="cs_slide1_2"><span><i></i></span></label>
 
+      </div>
+      <div class="cs_bullets">
+          <label class="num0" for="cs_slide1_0">
+            <span class="cs_point"></span>
+          </label>
+          <label class="num1" for="cs_slide1_1">
+            <span class="cs_point"></span>
+          </label>
+          <label class="num2" for="cs_slide1_2">
+            <span class="cs_point"></span>
+          </label>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <div class="madras-sec">
+    <h2>LEARN TO KNOW</h2>
+    <h1 style="margin-bottom:1%">IEEE MADRAS SECTION</h1>
+    <p>IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefits of humanity.</p>
+    <button class="madras-btn"><a target="_blank" href="https://www.ieeemadras.org/">VISIT</a></button>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <div class="membership">
+    <h2>Membership</h2>
+    <p class="blue-txt">Come be a part of the legacy and make technology better!</p>
+    <div class="membership-cards">
+      <div class="membership-card" data-aos="zoom-out" data-aos-delay="300" data-aos-duration="800">
+        <h3>Benefits</h3>
+        <p><span>✓</span> New resources, opportunities and many discounts</p>
+        <p><span>✓</span> Advance your career in right direction</p>
+        <p><span>✓</span> Chance to participate in various IEEE conferences across the globe.</p>
+        <button class="madras-btn"><a target="_blank"href="https://www.ieee.org/membership/benefits/index.html?byCareerPhase=All#:~:text=IEEE%20members%20enjoy%20reduced%20rates,affinity%20programs%20that%20offer%20savings.">Know More</a></button>
+      </div>
+      <div class="membership-card" data-aos="zoom-out" data-aos-delay="300" data-aos-duration="800">
+        <h3>Join a Society</h3>
+        <p><span>✓</span> Stay updated with latesttrends in technology</p>
+        <p><span>✓</span> Network with colleagues locally and abroad</p>
+        <p><span>✓</span> Collaborate on research and projects with leading experts and many such opportunities</p>
+        <button class="madras-btn"><a target="_blank" href="https://www.ieee.org/communities/societies/index.html">View More</a></button>
+      </div>
+      <div class="membership-card" data-aos="zoom-out" data-aos-delay="300" data-aos-duration="800">
+        <h3>Join IEEE</h3>
+        <p><span>✓</span> Be a part of the world's largest technology community</p>
+        <p><span>✓</span> Acquire new skills, and advance your professional growth and development</p>
+        <p><span>✓</span> New resources, opportunities and many discounts</p>
+        <button class="madras-btn"><a target="_blank" href="https://www.ieee.org/communities/societies/index.html">Join Now</a></button>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <div class="counter-box">
+    <h1>Members Count</h1>
+    <div class="counter-box-inner">
+      <div class="counter-name">
+        <div id="value1">210</div>
+        <p>Students</p>
+      </div>
+      <div class="counter-name">
+        <div id="value2">9</div>
+        <p>Societies</p>
+      </div>
+      <div class="counter-name">
+        <div id="value3">34</div>
+        <p>Events</p>
+      </div>
+      <div class="counter-name">
+        <div id="value4">120</div>
+        <p>Staffs</p>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <footer id="contact">
+    <div class="footer abt">
+      <h2>About Us</h2>
+      <div class="footer-content">
+        <a>Aim</a>
+        <a>Vision</a>
+        <a>Testimonials</a>
+      </div>
+    </div>
+    <div class="footer services">
+      <h2>Services</h2>
+      <div class="footer-content">
+        <a>Writing</a>
+        <a>Internships</a>
+        <a>Coding</a>
+        <a>Teaching</a>
+        </div>
+    </div>
+    <div class="footer socials">
+      <h2>Social Media</h2>
+      <div class="footer-content">
+        <a href="#"><img src="./images/icons8-facebook-50.png"/></a>
+        <a><img src="./images/icons8-instagram-50.png" /></a>
+        <a><img src="./images/icons8-youtube-50.png" /></a>
+      </div>
+    </div>
+  </footer>
   <a href="#" class="top">↑</a>
   <script src="index.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+  <script>
+      AOS.init();
+  </script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+
 document.querySelector('.hamburger').addEventListener('click', (e)=>{
 console.log("clicked!");
   document.querySelector('.navRight-mobile').classList.toggle('hidden-nav')
@@ -6,6 +7,23 @@ console.log("clicked!");
     span.classList.toggle(`close-${++i}`);
   })
 })
+
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 window.onscroll = function() {scrollFunction()};
 
@@ -23,6 +41,17 @@ function scrollFunction() {
   } else {
     document.querySelector(".top").classList.remove('show-top');
   }
+  const obj1 = document.getElementById("value1");
+  animateValue(obj1, 0, 210, 1800);
+
+  const obj2 = document.getElementById("value2");
+  animateValue(obj2, 0, 9, 1800);
+
+  const obj3 = document.getElementById("value3");
+  animateValue(obj3, 0, 34, 1800);
+
+  const obj4 = document.getElementById("value4");
+  animateValue(obj4, 0, 120, 1800);
 } 
 
 var coll = document.getElementsByClassName("collapsible");
@@ -39,3 +68,18 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+
