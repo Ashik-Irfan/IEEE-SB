@@ -9,7 +9,6 @@ console.log("clicked!");
 })
 
 var modal = document.getElementById("myModal");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
@@ -30,28 +29,26 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if(document.body.scrollTop > 120 || document.documentElement.scrollTop > 120){
     document.querySelector(".nav").style.height = "12vh";
-    // document.querySelector(".nav").style.background = "#fff";
+    document.querySelector(".nav").style.background = "#fff";
+    var ele = document.getElementsByClassName('n-btn');
+    for (var i = 0; i < ele.length; i++ ) {
+      ele[i].style.color = "#07294D";
+    }
+    document.getElementById("nav-logo").src = "./images/logo.jpg";
   } else {
     document.querySelector(".nav").style.height = "10vh";
-    // document.querySelector(".nav").style.background = "transparent";
-
+    document.querySelector(".nav").style.background = "transparent";
+    var ele = document.getElementsByClassName('n-btn');
+    for (var i = 0; i < ele.length; i++ ) {
+      ele[i].style.color = "#fff";
+    }
+    document.getElementById("nav-logo").src = "./images/ieee bg white.png";
   }
   if(document.body.scrollTop > 120 || document.documentElement.scrollTop > 120){
     document.querySelector(".top").classList.add('show-top');
   } else {
     document.querySelector(".top").classList.remove('show-top');
   }
-  const obj1 = document.getElementById("value1");
-  animateValue(obj1, 0, 210, 1800);
-
-  const obj2 = document.getElementById("value2");
-  animateValue(obj2, 0, 9, 1800);
-
-  const obj3 = document.getElementById("value3");
-  animateValue(obj3, 0, 34, 1800);
-
-  const obj4 = document.getElementById("value4");
-  animateValue(obj4, 0, 120, 1800);
 } 
 
 var coll = document.getElementsByClassName("collapsible");
@@ -82,4 +79,25 @@ function animateValue(obj, start, end, duration) {
   window.requestAnimationFrame(step);
 }
 
+window.addEventListener('scroll', function(){
+  var place = document.documentElement.scrollTop;
+  var alertOn = document.getElementById('anotherElement').offsetTop;
+  console.log(alertOn);
+  if(place > alertOn-500){
+    console.log("Loading..");
+    const obj1 = document.getElementById("value1");
+    animateValue(obj1, 0, 210, 1800);
 
+    const obj2 = document.getElementById("value2");
+    animateValue(obj2, 0, 9, 1800);
+
+    const obj3 = document.getElementById("value3");
+    animateValue(obj3, 0, 34, 1800);
+
+    const obj4 = document.getElementById("value4");
+    animateValue(obj4, 0, 120, 1800);
+    this.removeEventListener('scroll', arguments.callee, false);
+  }
+});
+
+  
