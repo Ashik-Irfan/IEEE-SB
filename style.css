@@ -669,7 +669,7 @@ footer{
 
 @media (max-width: 800px) {
   .overlay img{
-    width:150%;
+    width:80%;
   }
   .modal-content{
     width:80%;
