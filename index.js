@@ -82,9 +82,7 @@ function animateValue(obj, start, end, duration) {
 window.addEventListener('scroll', function(){
   var place = document.documentElement.scrollTop;
   var alertOn = document.getElementById('anotherElement').offsetTop;
-  console.log(alertOn);
   if(place > alertOn-500){
-    console.log("Loading..");
     const obj1 = document.getElementById("value1");
     animateValue(obj1, 0, 210, 1800);
 

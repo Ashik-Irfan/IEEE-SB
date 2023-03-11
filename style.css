@@ -415,6 +415,13 @@ societies{
   padding:2%;
   gap:30px;
 }
+.big{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:50px;
+}
+
 .member-card{
   display: flex;
   flex-direction: column;
@@ -449,6 +456,11 @@ width:150px;
 }
 .pc{
   flex-direction: row;
+}
+.big img{
+  width:150px;
+  height:150px;
+  object-fit: cover;
 }
 .members-mobile{
   display: none;
@@ -517,7 +529,10 @@ font-weight: 600;
 text-transform: uppercase;
 }
 
-
+.gallery{
+  display: flex;
+  justify-content: center;
+}
 
 
 .madras-sec{
